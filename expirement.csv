@@ -1,0 +1,10 @@
+Expierement,FeatureSelection,BestFirst+CFS,Ranker+InfoGain,PreProcessing,Normalization,Standardization
+1,FALSE,,,FALSE,,
+2,FALSE,,,TRUE,TRUE,
+3,FALSE,,,TRUE,,TRUE
+4,TRUE,TRUE,,FALSE,,
+5,TRUE,,TRUE,FALSE,,
+6,TRUE,TRUE,,TRUE,TRUE,
+7,TRUE,,TRUE,TRUE,TRUE,
+8,TRUE,TRUE,,TRUE,,TRUE
+9,TRUE,,TRUE,TRUE,,TRUE
