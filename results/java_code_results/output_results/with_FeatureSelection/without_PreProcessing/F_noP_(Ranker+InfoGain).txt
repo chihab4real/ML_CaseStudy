@@ -1,0 +1,169 @@
+Selected Attributes:-----
+@attribute src_bytes numeric
+@attribute service {aol,auth,bgp,courier,csnet_ns,ctf,daytime,discard,domain,domain_u,echo,eco_i,ecr_i,efs,exec,finger,ftp,ftp_data,gopher,harvest,hostnames,http,http_2784,http_443,http_8001,imap4,IRC,iso_tsap,klogin,kshell,ldap,link,login,mtp,name,netbios_dgm,netbios_ns,netbios_ssn,netstat,nnsp,nntp,ntp_u,other,pm_dump,pop_2,pop_3,printer,private,red_i,remote_job,rje,shell,smtp,sql_net,ssh,sunrpc,supdup,systat,telnet,tftp_u,tim_i,time,urh_i,urp_i,uucp,uucp_path,vmnet,whois,X11,Z39_50}
+@attribute dst_bytes numeric
+@attribute flag {OTH,REJ,RSTO,RSTOS0,RSTR,S0,S1,S2,S3,SF,SH}
+@attribute diff_srv_rate numeric
+@attribute same_srv_rate numeric
+@attribute dst_host_srv_count numeric
+@attribute dst_host_same_srv_rate numeric
+@attribute dst_host_diff_srv_rate numeric
+@attribute dst_host_serror_rate numeric
+@attribute logged_in {0,1}
+@attribute dst_host_srv_serror_rate numeric
+@attribute serror_rate numeric
+@attribute count numeric
+@attribute srv_serror_rate numeric
+@attribute dst_host_srv_diff_host_rate numeric
+@attribute dst_host_count numeric
+@attribute dst_host_same_src_port_rate numeric
+@attribute srv_diff_host_rate numeric
+@attribute srv_count numeric
+@attribute dst_host_srv_rerror_rate numeric
+@attribute protocol_type {tcp,udp,icmp}
+@attribute rerror_rate numeric
+@attribute dst_host_rerror_rate numeric
+@attribute srv_rerror_rate numeric
+@attribute duration numeric
+@attribute hot numeric
+@attribute wrong_fragment numeric
+@attribute num_compromised numeric
+@attribute num_root numeric
+@attribute num_access_files numeric
+@attribute is_guest_login {0,1}
+@attribute num_file_creations numeric
+@attribute su_attempted numeric
+@attribute root_shell numeric
+@attribute num_shells numeric
+@attribute num_failed_logins numeric
+@attribute land {0,1}
+@attribute is_host_login {0,1}
+@attribute num_outbound_cmds numeric
+@attribute urgent numeric
+@attribute class {normal,anomaly}
+-------------------------------------------------
+J48:---------- 
+
+Correctly Classified Instances       18381               81.5339 %
+Incorrectly Classified Instances      4163               18.4661 %
+Kappa statistic                          0.6399
+Mean absolute error                      0.1731
+Root mean squared error                  0.4066
+Relative absolute error                 34.2994 %
+Root relative squared error             80.3651 %
+Total Number of Instances            22544     
+
+Accuracy: 81.53388928317956
+Precision_0: 0.7078213964638898
+Precision_1: 0.9714006089604176
+F1_0: 0.8194631163537014
+F1_1: 0.8110218348540561
+Confusion Matrix:
+    a    b   <-- classified as
+ 9448  263 |    a = normal
+ 3900 8933 |    b = anomaly
+
+NB:----------
+
+Correctly Classified Instances       17160               76.1178 %
+Incorrectly Classified Instances      5384               23.8822 %
+Kappa statistic                          0.5365
+Mean absolute error                      0.2387
+Root mean squared error                  0.4862
+Relative absolute error                 47.2824 %
+Root relative squared error             96.1029 %
+Total Number of Instances            22544
+
+Accuracy: 76.11781405251952
+Precision_0: 0.6572882588149763
+Precision_1: 0.9237683467971328
+F1_0: 0.7705616636836273
+F1_1: 0.750994357598742
+Confusion Matrix:
+    a    b   <-- classified as
+ 9041  670 |    a = normal
+ 4714 8119 |    b = anomaly
+
+SVM:----------
+
+Correctly Classified Instances       17160               76.1178 %
+Incorrectly Classified Instances      5384               23.8822 %
+Kappa statistic                          0.5365
+Mean absolute error                      0.2387
+Root mean squared error                  0.4862
+Relative absolute error                 47.2824 %
+Root relative squared error             96.1029 %
+Total Number of Instances            22544
+
+Accuracy: 76.11781405251952
+Precision_0: 0.6572882588149763
+Precision_1: 0.9237683467971328
+F1_0: 0.7705616636836273
+F1_1: 0.750994357598742
+Confusion Matrix:
+    a    b   <-- classified as
+ 9041  670 |    a = normal
+ 4714 8119 |    b = anomaly
+
+RandomForest:----------
+
+Correctly Classified Instances       18063               80.1233 %
+Incorrectly Classified Instances      4481               19.8767 %
+Kappa statistic                          0.6138
+Mean absolute error                      0.1963
+Root mean squared error                  0.3829
+Relative absolute error                 38.8852 %
+Root relative squared error             75.6789 %
+Total Number of Instances            22544
+
+Accuracy: 80.12331440738112
+Precision_0: 0.6915750915750916
+Precision_1: 0.969530020238363
+F1_0: 0.8081845811395061
+F1_1: 0.7937589174759517
+Confusion Matrix:
+    a    b   <-- classified as
+ 9440  271 |    a = normal
+ 4210 8623 |    b = anomaly
+
+KNN:----------
+
+Correctly Classified Instances       17890               79.3559 %
+Incorrectly Classified Instances      4654               20.6441 %
+Kappa statistic                          0.5987
+Mean absolute error                      0.2063
+Root mean squared error                  0.4541
+Relative absolute error                 40.871  %
+Root relative squared error             89.7588 %
+Total Number of Instances            22544
+
+Accuracy: 79.35592618878637
+Precision_0: 0.6855507448447934
+Precision_1: 0.9586183694067512
+F1_0: 0.8005827405947381
+F1_1: 0.786022988505747
+Confusion Matrix:
+    a    b   <-- classified as
+ 9342  369 |    a = normal
+ 4285 8548 |    b = anomaly
+
+NN:----------
+
+Correctly Classified Instances       16850               74.7427 %
+Incorrectly Classified Instances      5694               25.2573 %
+Kappa statistic                          0.5114
+Mean absolute error                      0.2556
+Root mean squared error                  0.4817
+Relative absolute error                 50.6307 %
+Root relative squared error             95.1999 %
+Total Number of Instances            22544
+
+Accuracy: 74.74272533711853
+Precision_0: 0.6432085561497326
+Precision_1: 0.9190045780021129
+F1_0: 0.7601112234580383
+F1_1: 0.7333270887973024
+Confusion Matrix:
+    a    b   <-- classified as
+ 9021  690 |    a = normal
+ 5004 7829 |    b = anomaly
