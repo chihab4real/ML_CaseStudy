@@ -22,7 +22,7 @@
 ***Normalized*** Data with ***Feature Selection(Ranker+InfoGain)***
 
 ## Experiment 8:
-***Standardized*** Data with with ***Feature Selection(Ranker+InfoGain)***
+***Standardized*** Data with ***Feature Selection(Ranker+InfoGain)***
 
 ## Experiment 9: 
-***Standardized*** Data with with ***Feature Selection(Ranker+InfoGain)***
+***Standardized*** Data with ***Feature Selection(Ranker+InfoGain)***
