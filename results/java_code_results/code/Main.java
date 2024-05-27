@@ -157,13 +157,6 @@ public class Main {
 
 
 
-        Classifier Svm = new NaiveBayes();
-        Svm.buildClassifier(trainData);
-        Evaluation evalSvm = new Evaluation(trainData);
-        evalSvm.evaluateModel(Svm, testData);
-        Print("SVM",evalSvm);
-
-
 
         Classifier rf = new RandomForest();
         rf.buildClassifier(trainData);
