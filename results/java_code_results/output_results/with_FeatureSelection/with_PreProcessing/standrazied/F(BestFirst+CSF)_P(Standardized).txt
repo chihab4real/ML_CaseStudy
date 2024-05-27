@@ -55,26 +55,7 @@ Confusion Matrix:
  9440  271 |    a = normal
  5673 7160 |    b = anomaly
 
-SVM:----------
 
-Correctly Classified Instances       16600               73.6338 %
-Incorrectly Classified Instances      5944               26.3662 %
-Kappa statistic                          0.4964
-Mean absolute error                      0.2634
-Root mean squared error                  0.4904
-Relative absolute error                 52.1802 %
-Root relative squared error             96.921  %
-Total Number of Instances            22544
-
-Accuracy: 73.63378282469837
-Precision_0: 0.6246278038774565
-Precision_1: 0.9635311532768134
-F1_0: 0.7605543022881083
-F1_1: 0.7066719305171734
-Confusion Matrix:
-    a    b   <-- classified as
- 9440  271 |    a = normal
- 5673 7160 |    b = anomaly
 
 RandomForest:----------
 
